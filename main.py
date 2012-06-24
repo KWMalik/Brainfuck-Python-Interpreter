@@ -5,6 +5,7 @@ ip			   =  0 # stands for instruction pointer
 
 # API
 
+
 def inc_p():
 	global ip
 	global  BUFFER
@@ -72,6 +73,8 @@ def skip_occurences(code, a, times):
 			return -1
 		times -= 1
 	return c
+
+# Note: The code gets filthy ugly from this point. User discretion is advised
 
 def eval_brainfuck(code):
 	if not isinstance(code, str):
